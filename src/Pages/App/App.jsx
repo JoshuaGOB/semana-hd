@@ -20,7 +20,7 @@ const AppRoutes = () => {
 
 function App() {
   return (
-    <BrowserRoute basename='/semana-hd'r>
+    <BrowserRouter basename='/semana-hd'>
       <nav>
         <NavLink to="/">
           <img

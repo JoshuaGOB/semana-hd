@@ -1,3 +1,4 @@
+
 import { useRoutes, BrowserRouter } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import ColorBar from "../../Components/ColorBar/ColorBar";
@@ -7,6 +8,16 @@ import Calendar from "../Calendar/Calendar";
 import CalendarEvent from "../CalendarEvent/CalendarEvent";
 import NotFound from "../NotFound/NotFound";
 import "./App.css";
+import semanahdLogo from '../../../public/images/semanahd-logo.jpg';
+import logoUnam from '../../../public/images/logo-unam.jpg';
+import RHD from '../../../public/images/rhd.png';
+import logoCUAED from '../../../public/images/logo-cuaed-ver.jpg';
+import AAHD from '../../../public/images/aahd.png';
+import logoRCHD from '../../../public/images/rchd.png';
+import BUNAM from '../../../public/images/bunam_mooc.svg';
+
+
+
 
 const AppRoutes = () => {
   return useRoutes([
@@ -24,18 +35,18 @@ function App() {
       <nav>
         <NavLink to="/">
           <img
-            src="public/images/semanahd-logo.jpg"
+            src={semanahdLogo}
             alt="Semana de Humanidades Digitales"
             width={158}
           />
         </NavLink>
         <a
-          href="https://hdlab.space/"
+          href="https://unam.mx/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="public/images/logo-unam.jpg"
+            src={logoUnam}
             alt="Universidad Nacional Autónoma de México"
             width={56}
           />
@@ -46,7 +57,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <img
-            src="public/images/logo-cuaed-ver.jpg"
+            src={logoCUAED}
             alt="Coordinación de Universidad Abierta y Educación Digital"
             width={72}
           />
@@ -57,7 +68,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <img
-            src="public/images/aahd.png"
+            src={AAHD}
             alt="Asociación Argentina de Humanidades Digitales"
             width={60}
           />
@@ -68,7 +79,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <img
-            src="public/images/rchd.png"
+            src={logoRCHD}
             alt="Red Colombiana de Humanidades Digitales"
             width={78}
           />
@@ -79,7 +90,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <img
-            src="public/images/rhd.png"
+            src={RHD}
             alt="Red de Humanidades Digitales"
             width={68}
           />
@@ -101,7 +112,7 @@ function App() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="public/images/bunam_mooc.svg"
+                  src={BUNAM}
                   alt="B@UNAM & MOOC"
                   width={100}
                 />
@@ -112,7 +123,7 @@ function App() {
             <h6 className="text-xl">Aviso</h6>
             <p>
               Coordinación de Universidad Abierta y Educación Digital de la
-              UNAM. ©Todos los derechos reservados 2025. Hecho en México. Este
+              UNAM. ©Todos los derechos reservados 2024. Hecho en México. Este
               sitio puede ser reproducido con fines no lucrativos, siempre y
               cuando no se mutile, se cite la fuente completa y su dirección
               electrónica, de otra forma, se requiere permiso previo por escrito
